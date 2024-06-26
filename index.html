@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No is Even or Odd</title>
+</head>
+<body>
+<script>
+let userInput = prompt("Enter your number:");
+
+// Convert the user input from string to number
+let number = parseInt(userInput);
+
+if (!isNaN(number)) {
+    // Check if the number is odd or even
+    if (number % 2 === 0) 
+    {
+        document.write(`${number} is Even number.`);
+    } else {
+        document.write(`${number} is Odd number.`);
+    }
+  } 
+else {
+    document.write("Invalid number. Please enter a valid number.");
+}
+ </script>
+</body>
+</html>
