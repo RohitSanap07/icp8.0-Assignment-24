@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Prompt the user to enter two numbers
+    let number1 = parseFloat(prompt("Enter the first number:"));
+    let number2 = parseFloat(prompt("Enter the second number:"));
+    
+    
+    // Check if inputs are valid numbers
+    if (isNaN(number1) || isNaN(number2)) {
+        alert("Please enter valid numbers.");
+    } else {
+        // Determine the largest number
+        if (number1 > number2) {
+            alert("The largest number is: " + number1);
+        } else if (number2 > number1) {
+            alert("The largest number is: " + number2);
+        } else {
+            alert("Both numbers are equal.");
+        }
+    }
+</script>
+
+</body>
+</html>
